@@ -7,7 +7,11 @@ use Illuminate\Http\Request;
 
 class PostController extends Controller
 {
-    $posts = Post:all();
-
-    return view('guest.posts.index', compact('posts'));
+    //utenti guest e admin
+    public function index()
+    {
+        $posts = Post::all();
+        
+        return view('guest.posts.index', compact('posts'));
+    }
 }

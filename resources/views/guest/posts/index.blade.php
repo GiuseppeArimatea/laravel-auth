@@ -1,1 +1,1 @@
-@dd($posts);
+@dd($posts)
